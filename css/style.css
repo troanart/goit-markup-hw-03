@@ -10,6 +10,10 @@
   --card-portfolio: #eee;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--background-color);
@@ -18,11 +22,41 @@ body {
 a {
   color: currentColor;
   text-decoration: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* ------ Auxiliaey Classes -------------- */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 94px 0 94px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 /* ------------- Header ------------- */
 .site-header {
   background-color: var(--primary-white-color);
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
 }
 
 .header-logo {
@@ -32,6 +66,8 @@ a {
   text-decoration: none;
   color: var(--text-logo-accent);
   letter-spacing: 0.78px;
+  margin-right: 93px;
+  height: 31px;
 }
 
 .web {
@@ -45,6 +81,14 @@ a {
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.28px;
+  width: 281px;
+  display: block;
+  margin-right: 344px;
+}
+
+.header-ul,
+.header-ul-info {
+  display: flex;
 }
 
 .nav-menu .link {
@@ -56,10 +100,15 @@ a {
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.28px;
+  padding-right: 50px;
 }
 
 .link.active {
   color: var(--primary-link-color);
+}
+
+.last-child {
+  padding-right: 0;
 }
 
 .link:hover,
@@ -131,6 +180,9 @@ li {
 .banner {
   background: var(--footer-bcg-color);
   text-align: center;
+  width: 100%;
+  height: 600px;
+  padding-top: 200px;
 }
 
 .banner-titel {
@@ -140,6 +192,7 @@ li {
   text-transform: uppercase;
   line-height: 1.36;
   letter-spacing: 2.64px;
+  margin-bottom: 30px;
 }
 
 .banner-btn {
@@ -155,12 +208,27 @@ li {
   color: var(--primary-white-color);
   border: none;
   cursor: pointer;
+  padding: 10px 32px 10px 32px;
 }
 
 /* --------- section about ------- */
 
 .about {
   background-color: var(--primary-white-color);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.about-info {
+  width: 1170px;
+  display: flex;
+}
+
+.about-info li {
+  width: 270px;
+  height: 98px;
+  padding-right: 30px;
 }
 
 .about-subtitle {
