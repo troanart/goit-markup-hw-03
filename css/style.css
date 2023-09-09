@@ -25,9 +25,6 @@ body {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
-  /* display: flex;
-  justify-content: space-between;
-  align-items: center; */
 }
 
 /* --------- new fix ---------- */
@@ -84,6 +81,10 @@ li {
 
 li:last-child {
   padding-right: 0;
+}
+
+img {
+  display: block;
 }
 
 h1,
@@ -196,7 +197,7 @@ li {
 }
 
 .card-info {
-  display: inline-table;
+  min-width: 1178px;
 }
 
 .card-portfolio {
@@ -281,6 +282,7 @@ li {
   background: var(--footer-bcg-color);
   /* ------------ LAYOUT IN CLASS ---------------  */
   padding: 200px 0;
+  text-align: center;
 }
 
 .banner-titel {
@@ -292,8 +294,7 @@ li {
   letter-spacing: 2.64px;
   /* ------------ LAYOUT  IN CLASS---------------  */
   width: 696px;
-  margin-bottom: 30px;
-  text-align: center;
+  margin: 0 auto 30px auto;
 }
 
 .banner-btn {
@@ -317,6 +318,7 @@ li {
 
 .about {
   background-color: var(--primary-white-color);
+  padding-bottom: 0;
 }
 
 .about-info {
@@ -325,6 +327,10 @@ li {
 
 .about-info li {
   margin-right: 30px;
+}
+
+.about-li {
+  width: 270px;
 }
 
 .about-info li:last-child {
@@ -350,8 +356,6 @@ li {
 /* ------------our-work -----------  */
 
 .our-work-info {
-  width: 100%;
-  height: 294px;
   display: flex;
 }
 
@@ -369,6 +373,7 @@ li {
   font-weight: 700;
   letter-spacing: 1.08px;
   margin-bottom: 50px;
+  text-align: center;
 }
 /* ----------- our team ----------- */
 
@@ -385,6 +390,7 @@ li {
   font-weight: 700;
   letter-spacing: 1.08px;
   margin-bottom: 50px;
+  text-align: center;
 }
 
 .our-team-info li {
@@ -414,15 +420,14 @@ li {
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   /* ------------ LAYOUT ---------------  */
   width: 270px;
-  height: 368px;
+
   border-radius: 0px 0px 4px 4px;
   text-align: center;
 }
 
-.card-img {
-  margin-bottom: 30px;
+.box-title {
+  padding: 30px 0;
 }
-
 /* ------------ footer ------------- */
 
 .site-footer {
